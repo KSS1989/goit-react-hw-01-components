@@ -16,14 +16,13 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
     </Container>
   );
 };
 Profile.propTypes = {
+  key: PropTypes.string,
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
 };
