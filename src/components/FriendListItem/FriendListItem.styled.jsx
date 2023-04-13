@@ -21,8 +21,8 @@ export const Name = styled.p`
   margin-left: 15px;
 `;
 export const Status = styled.span`
-  color: ${props => {
-    if (props !== true) {
+  color: ${({ status }) => {
+    if (status === true) {
       return '#4caf50';
     }
     return '#f44336';
