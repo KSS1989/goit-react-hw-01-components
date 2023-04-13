@@ -20,7 +20,7 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <ProfileCards>
+    <ProfileCards key={username}>
       <Description>
         <Avatar src={avatar} alt={username} />
         <Name>{username}</Name>

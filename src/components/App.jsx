@@ -2,12 +2,13 @@ import { Profile } from './Profile/Profile.jsx';
 import PropTypes from 'prop-types';
 import user from 'user.json';
 import data from 'data.json';
+import friendList from 'friends.json';
 import { Container } from './App.styled.jsx';
 import { Statistics } from './Statistics/Statistics.jsx';
-
+import { FriendList } from 'components/FriendList/FriendList.jsx';
 export const App = () => {
   return (
-    <Container key={user.username}>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -16,6 +17,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <FriendList friendList={friendList} />
     </Container>
   );
 };
