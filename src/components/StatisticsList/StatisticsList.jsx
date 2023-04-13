@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
-import { ListItem } from 'components/StatisticsList/StatisticsList.styled';
+import {
+  ListItem,
+  Percentage,
+  Label,
+} from 'components/StatisticsList/StatisticsList.styled';
+
 export const StatisticsList = ({ id, label, percentage }) => {
   return (
     <ListItem key={id}>
-      <span>{label}</span>
-      <span>{percentage}</span>
+      <Label>{label}</Label>
+      <Percentage>{percentage}</Percentage>
     </ListItem>
   );
 };

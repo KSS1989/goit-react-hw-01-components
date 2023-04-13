@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Description = styled.div`
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 `;
 export const Avatar = styled.img`
   width: 150px;
@@ -13,7 +14,6 @@ export const ProfileCards = styled.div`
   width: 250px;
   height: auto;
   margin-top: 100px;
-  padding-top: 20px;
   background-color: #fff0ff;
   border: 1px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -31,7 +31,6 @@ export const Location = styled.p`
 `;
 export const Label = styled.span`
   font-size: 16px;
-
   margin-bottom: 5px;
 `;
 export const Quantity = styled.span`
@@ -48,7 +47,7 @@ export const Li = styled.li`
   display: flex;
   flex-direction: column;
   width: 33%;
+
   border: 1px solid rgb(218, 218, 218, 0.9);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 `;
