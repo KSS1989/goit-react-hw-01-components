@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 import { List } from 'components/FriendList/FriendList.styled';
@@ -16,4 +16,10 @@ export const FriendList = ({ friendList }) => {
       ))}
     </List>
   );
+};
+FriendList.prototype = {
+  key: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  status: PropTypes.bool.isRequired,
 };
