@@ -6,6 +6,7 @@ import friendList from 'friends.json';
 import { Container } from './App.styled.jsx';
 import { Statistics } from './Statistics/Statistics.jsx';
 import { FriendList } from 'components/FriendList/FriendList.jsx';
+
 export const App = () => {
   return (
     <Container>
@@ -16,7 +17,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />
+      <Statistics title="" stats={data} />
+      {/* <Statistics title={data.title} stats={data} /> */}
       <FriendList friendList={friendList} />
     </Container>
   );

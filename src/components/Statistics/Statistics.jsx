@@ -5,7 +5,7 @@ import { StatisticsList } from 'components/StatisticsList/StatisticsList';
 export const Statistics = ({ stats, title }) => {
   return (
     <StatisticsSection>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <List>
         {stats.map(({ id, label, percentage }) => (
           <StatisticsList key={id} label={label} percentage={percentage} />
