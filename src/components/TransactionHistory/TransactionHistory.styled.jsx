@@ -24,11 +24,16 @@ export const TableTd = styled.td`
   border: 1px solid;
   font-style: italic;
 `;
-export const Tbody = styled.tbody``;
+export const Tbody = styled.tbody`
 
-export const TableTr = styled.tr:nth-child(even)`  
-background-color: #f9f9f9;
 `;
-export const TableTr = styled.tr:hover`  
+export const TableTr =styled.tr`
+&:hover{
   background-color: #f0f0f0;
-`;
+}
+&:nth-child(even) {
+  background-color: #f9f9f9;
+}
+`
+
+
