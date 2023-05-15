@@ -5,10 +5,10 @@ import { Container } from './App.styled.jsx';
 import { Statistics } from './Statistics/Statistics.jsx';
 import { FriendList } from 'components/FriendList/FriendList.jsx';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory.jsx';
-import user from 'object/user.json';
-import data from 'object/data.json';
-import friendList from 'object/friends.json';
-import transactions from 'object/transactions.json';
+import user from 'data/user.json';
+import data from 'data/data.json';
+import friendList from 'data/friends.json';
+import transactions from 'data/transactions.json';
 
 export const App = () => {
   return (
