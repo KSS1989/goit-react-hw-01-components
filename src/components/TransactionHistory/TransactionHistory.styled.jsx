@@ -17,6 +17,7 @@ export const TableTh = styled.th`
   border: 1px solid;
   background-color: #a7a7a4;
 `;
+
 export const TableTd = styled.td`
   height: 50px;
   font-size: 18px;
@@ -24,4 +25,10 @@ export const TableTd = styled.td`
   font-style: italic;
 `;
 export const Tbody = styled.tbody``;
-export const TableTr = styled.tr``;
+
+export const TableTr = styled.tr:nth-child(even)`  
+background-color: #f9f9f9;
+`;
+export const TableTr = styled.tr:hover`  
+  background-color: #f0f0f0;
+`;
