@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Profile } from './Profile/Profile.jsx';
 import { Container } from './App.styled.jsx';
 import { Statistics } from './Statistics/Statistics.jsx';
@@ -25,15 +24,4 @@ export const App = () => {
       <TransactionHistory items={transactions} />;
     </Container>
   );
-};
-Profile.propTypes = {
-  key: PropTypes.string,
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-};
-Statistics.propTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
 };

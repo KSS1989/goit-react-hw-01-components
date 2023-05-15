@@ -17,9 +17,13 @@ export const FriendList = ({ friendList }) => {
     </List>
   );
 };
-FriendList.prototype = {
-  key: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  status: PropTypes.bool.isRequired,
+FriendList.protoType = {
+  friendList: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
