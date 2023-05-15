@@ -9,7 +9,7 @@ export const StatisticsList = ({ id, label, percentage }) => {
   return (
     <ListItem key={id}>
       <Label>{label}</Label>
-      <Percentage>{percentage}</Percentage>
+      <Percentage>{percentage}%</Percentage>
     </ListItem>
   );
 };

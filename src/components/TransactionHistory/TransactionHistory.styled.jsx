@@ -15,7 +15,7 @@ export const TableTh = styled.th`
   height: 50px;
   font-size: 20px;
   border: 1px solid;
-  background-color: #a7a7a4;
+  background-color: #008080;
 `;
 
 export const TableTd = styled.td`
@@ -28,11 +28,8 @@ export const Tbody = styled.tbody`
 
 `;
 export const TableTr =styled.tr`
-&:hover{
-  background-color: #f0f0f0;
-}
-&:nth-child(even) {
-  background-color: #f9f9f9;
+&:nth-child(2n) {
+  background-color: #C0C0C0;
 }
 `
 
